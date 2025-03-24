@@ -1,0 +1,113 @@
+/* Extract Component Styles */
+.extract {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f8f9fa;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.extract-content {
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+}
+
+.upload-button, .extract-button {
+    display: inline-block;
+    padding: 12px 20px;
+    color: #fff;
+    background-color: #001F3F;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+}
+
+.upload-button:hover, .extract-button:hover {
+    background-color: #495057;
+    transform: translateY(-2px);
+}
+
+.preview-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.preview {
+    text-align: center;
+    border: 2px dashed #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    width: 100%;
+    position: relative;
+}
+
+.preview img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.download-link {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+}
+
+.download-link:hover {
+    text-decoration: underline;
+}
+
+/* Toast-style error message with auto fade-out */
+.error-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #ff4d4d;
+    color: black;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    opacity: 1;  /* Ensure message is fully visible initially */
+    transition: opacity 0.3s ease-in-out;
+    animation: fadeOut 4s forwards;  /* Trigger fade-out after 4 seconds */
+}
+
+/* Define the fadeOut animation */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden; /* Hide the message completely after fade out */
+    }
+}

@@ -1,0 +1,118 @@
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 25px 100px; /* Increase padding for more space */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #001F3F;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navbar-links {
+    list-style-type: none;
+    display: flex;
+    gap: 50px; /* Increase gap between menu items */
+    margin: 0;
+}
+
+.navbar-links li {
+    cursor: pointer;
+    color: #001F3F;
+    font-size: 16px;
+    transition: color 0.3s;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navbar-links li:hover {
+    color: #001F3F;
+}
+
+.navbar-links .active {
+    font-weight: bold;
+    color: #001F3F;
+}
+
+/* Navbar Buttons Section */
+.navbar-buttons {
+    display: flex;
+    gap: 15px; /* Increase gap between buttons */
+}
+
+/* Styling for Login/Sign Up Buttons */
+.navbar-buttons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 45px;
+    color: #fff;
+    background: #001F3F;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navbar-buttons button:hover {
+    background-color: #001F3F;
+}
+
+.navbar-buttons button.gray {
+    background: #eaeaea;
+    color: #001F3F;
+    font-weight: bold;
+}
+
+/* Styling for Sign Out Button */
+.navbar-buttons .sign-out-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 45px;
+    color: #fff;
+    background: #d9534f; /* Red background for Sign Out */
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navbar-buttons .sign-out-button:hover {
+    background-color: #c9302c; /* Darker red when hovered */
+}
+
+/* Mobile Styling for Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 30px; /* Adjust padding for smaller screens */
+    }
+
+    .navbar-links {
+        flex-direction: column; /* Stack navbar links vertically */
+        gap: 20px;
+        align-items: center; /* Center items */
+    }
+
+    .navbar-logo {
+        font-size: 20px; /* Smaller logo on mobile */
+    }
+
+    .navbar-buttons {
+        flex-direction: column; /* Stack buttons vertically on mobile */
+        gap: 10px;
+    }
+}

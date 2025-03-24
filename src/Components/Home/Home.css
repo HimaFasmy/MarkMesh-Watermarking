@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: #f8f9fa;
+    color: #001F3F;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: #ffffff;
+    color: #001F3F;
+    border-radius: 12px;
+    max-width: 1000px;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.hero-buttons button {
+    margin: 10px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background-color: #001F3F;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero-buttons button:hover {
+    background: #003366;
+}
+
+/* Features & Steps */
+.features, .steps {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 1000px;
+}
+
+.features-container, .steps-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.feature, .step {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature:hover, .step:hover {
+    transform: translateY(-5px);
+}
+
+/* Testimonials (Carousel) */
+.testimonials {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 600px;
+}
+
+.testimonial-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    position: absolute;
+}
+
+.testimonial-card.fade-in {
+    opacity: 1;
+    position: relative;
+}
+
+/* Left & Right Navigation Buttons */
+.prev, .next {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #001F3F;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: color 0.3s;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+    color: #003366;
+}

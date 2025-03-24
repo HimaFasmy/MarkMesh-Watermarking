@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: #f8f9fa;
+    color: #001F3F;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Embed Container */
+.embed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f8f9fa;
+    padding: 60px 20px;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* Embed Content Card */
+.embed-content {
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Headings */
+.embed-content h2 {
+    font-size: 28px;
+    color: #001F3F;
+    margin-bottom: 10px;
+}
+
+/* Upload & Embed Buttons */
+.upload-button, .embed-button {
+    display: inline-block;
+    padding: 12px 20px;
+    color: #fff;
+    background-color: #001F3F;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.upload-button:hover, .embed-button:hover {
+    background-color: #003366;
+    transform: translateY(-2px);
+}
+
+/* Image Preview Container */
+.preview-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+/* Preview Box */
+.preview {
+    text-align: center;
+    border: 2px dashed #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    width: 100%;
+}
+
+/* Image Inside Preview */
+.preview img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-height: 200px;
+}
+
+/* Download Link */
+.download-link {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.download-link:hover {
+    text-decoration: underline;
+}
+
+/* Error Message Styling */
+.error-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #ff4d4d;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0.95;
+    transition: opacity 0.3s ease-in-out;
+    animation: fadeOut 4s forwards;
+    z-index: 1000;
+}
+
+/* Fade-out Animation */
+@keyframes fadeOut {
+    0% { opacity: 0.95; }
+    80% { opacity: 0.95; }
+    100% { opacity: 0; }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .embed {
+        padding: 100px 10px 10px; /* Adjust padding */
+    }
+    .preview-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

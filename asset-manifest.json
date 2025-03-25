@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/HimaFasmy/MarkMesh-Watermarking/static/css/main.62142c7b.css",
+    "main.js": "/HimaFasmy/MarkMesh-Watermarking/static/js/main.9770dcda.js",
+    "static/js/453.8ab44547.chunk.js": "/HimaFasmy/MarkMesh-Watermarking/static/js/453.8ab44547.chunk.js",
+    "index.html": "/HimaFasmy/MarkMesh-Watermarking/index.html",
+    "main.62142c7b.css.map": "/HimaFasmy/MarkMesh-Watermarking/static/css/main.62142c7b.css.map",
+    "main.9770dcda.js.map": "/HimaFasmy/MarkMesh-Watermarking/static/js/main.9770dcda.js.map",
+    "453.8ab44547.chunk.js.map": "/HimaFasmy/MarkMesh-Watermarking/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.62142c7b.css",
+    "static/js/main.9770dcda.js"
+  ]
+}
